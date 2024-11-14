@@ -1,0 +1,126 @@
+/* Main Window */
+QMainWindow {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Central Widget */
+QWidget {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adding a shadow for a subtle floating effect */
+}
+
+/* Labels */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F4F4F; /* Dark Slate Gray */
+    margin-bottom: 10px; /* Spacing between the label and button */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+QPushButton:pressed {
+    background-color: #388e3c;
+    transform: scale(0.98); /* Subtle shrink effect when pressed */
+}
+
+/* Specific Button Colors */
+QPushButton#browseButton {
+    background-color: #2196F3; /* Blue for Browse button */
+    color: white;
+}
+
+QPushButton#startRealTimeCaptureButton {
+    background-color: #FF9800; /* Orange for Start Real-time Capture button */
+    color: white;
+}
+
+QPushButton#stopCaptureButton {
+    background-color: #F44336; /* Red for Stop Capture button */
+    color: white;
+}
+
+/* Line Edit (text fields) */
+QLineEdit {
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #555555;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+QLineEdit:focus {
+    border-color: #4CAF50; /* Green border when focused */
+}
+
+/* Layouts */
+QVBoxLayout {
+    spacing: 20px; /* Increased space between widgets */
+}
+
+/* Grouping */
+QGroupBox {
+    font-weight: bold;
+    color: #555555;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-top: 20px;
+}
+
+/* Combo Box */
+QComboBox {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+QComboBox:hover {
+    background-color: #e7e7e7;
+}
+
+QComboBox:focus {
+    border-color: #4CAF50; /* Green border on focus */
+}
+
+/* Scroll Areas */
+QScrollArea {
+    border: none;
+}
+
+/* Section Header Styling */
+QLabel#try_image_label, QLabel#try_video_label, QLabel#try_realtime_label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
